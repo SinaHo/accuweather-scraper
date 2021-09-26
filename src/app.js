@@ -5,6 +5,6 @@ let output = [];
 
 for (let u of urls) {
   console.log("u = ", u);
-
+  if (!u || u.length < 0) continue;
   accuByLocation(u);
 }
