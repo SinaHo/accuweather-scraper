@@ -1,0 +1,37 @@
+{
+  "name": "accuweather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "mwatch": "babel --watch src -d dist & nodemon dist/index.js",
+    "watch": "babel-watch src/index.js",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SinaHo/accuweather-scraper.git"
+  },
+  "author": "Sina Honarvar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SinaHo/accuweather-scraper/issues"
+  },
+  "homepage": "https://github.com/SinaHo/accuweather-scraper#readme",
+  "dependencies": {
+    "jssoup": "0.0.12",
+    "node-fetch": "^3.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-preset-latest": "^6.24.1",
+    "babel-watch": "^7.5.0",
+    "core-js": "^3.18.0",
+    "nodemon": "^2.0.13",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
