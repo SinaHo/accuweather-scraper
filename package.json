@@ -20,11 +20,7 @@
   },
   "homepage": "https://github.com/SinaHo/accuweather-scraper#readme",
   "dependencies": {
-    "axios": "^0.21.4",
-    "jssoup": "0.0.12",
-    "node-fetch": "^3.0.0",
-    "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "jssoup": "0.0.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
