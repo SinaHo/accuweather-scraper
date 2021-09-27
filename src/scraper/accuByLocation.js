@@ -31,6 +31,9 @@ export async function accuByLocation(url) {
     }
   }
   let sp = url.split("/");
-  let path = `./output/${sp[4]}-${sp[5]}-${sp[7]}.json`;
+  let path = `./output/${sp[4]}-${sp[5]}-${sp[7]}-${sp[sp.length - 1].replace(
+    /[?/]/,
+    "",
+  )}.json`;
   writeToFile(JSON.stringify(data, null, 2), path);
 }

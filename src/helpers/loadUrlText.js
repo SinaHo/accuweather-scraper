@@ -5,8 +5,6 @@ export function parseUrl(url) {
 }
 
 export async function loadUrlText(url) {
-  console.log("url  444444 = ", url);
-
   let u = parseUrl(url);
   try {
     const client = http2.connect(
