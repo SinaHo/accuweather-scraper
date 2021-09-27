@@ -1,9 +1,4 @@
-import request from "request-promise";
 import http2 from "http2";
-import axios from "axios";
-import fs from "fs";
-import zlib from "zlib";
-import dc from "decompress-response";
 export function parseUrl(url) {
   let u = new URL(url);
   return [u.origin, u.pathname];
